@@ -23,8 +23,7 @@ public class ProximityController {
      * @return JSON containing all the people from or near london.
      */
     @GetMapping("/london/50")
-    public String getWithinLondonProximity()
-    {
+    public String getWithinLondonProximity() {
         LondonRequest londonRequest = new LondonRequest();
         return new Gson().toJson(londonRequest.getPeopleFromOrNearLondon(), new TypeToken<ArrayList<Person>>(){}.getType());
     }

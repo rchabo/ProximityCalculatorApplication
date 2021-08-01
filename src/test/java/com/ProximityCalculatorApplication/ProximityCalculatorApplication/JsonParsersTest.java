@@ -8,8 +8,7 @@ import java.util.ArrayList;
 public class JsonParsersTest {
 
     @Test
-    void parse_And_Check_Response_modifies_list_correctly()
-    {
+    void parse_And_Check_Response_modifies_list_correctly() {
         // Create objects to be used
         String input =
                 "[" +
@@ -60,8 +59,7 @@ public class JsonParsersTest {
     }
 
     @Test
-    void parse_And_Check_Response_does_not_add_out_of_range_users()
-    {
+    void parse_And_Check_Response_does_not_add_out_of_range_users() {
         // Create objects to be used
         String input =
                 "[" +

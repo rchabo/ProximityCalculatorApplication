@@ -22,8 +22,7 @@ public class Haversine {
      * @return The distance (in KM or Miles, depending on which constant you use in the calculation) between the input
      * person and the london coordinates.
      */
-    public static double doHaversine(Person person)
-    {
+    public static double doHaversine(Person person) {
         double inputLatitude = person.getLatitude();
         double inputLongitude = person.getLongitude();
 

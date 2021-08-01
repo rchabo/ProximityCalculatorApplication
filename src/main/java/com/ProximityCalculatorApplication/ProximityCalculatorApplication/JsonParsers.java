@@ -37,8 +37,7 @@ public class JsonParsers {
      * @param people The list of persons we want to retrieve all the information for.
      * @return A new list where each person in the list contains data for all of its fields.
      */
-    ArrayList<Person> retrievePeopleEntries(ArrayList<Person> people)
-    {
+    ArrayList<Person> retrievePeopleEntries(ArrayList<Person> people) {
         ArrayList<Person> listToReturn = new ArrayList<>();
         people.forEach(person -> listToReturn.add(retrievePersonEntry(person)));
 
@@ -51,8 +50,7 @@ public class JsonParsers {
      * @param person The person we want to retrieve all the data for
      * @return The full entry for the person requested.
      */
-    Person retrievePersonEntry(Person person)
-    {
+    Person retrievePersonEntry(Person person) {
         HttpClient httpClient = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder(URI.create(RequestStrings.HEROKU_URL + RequestStrings.USER + person.getId())).build();
 

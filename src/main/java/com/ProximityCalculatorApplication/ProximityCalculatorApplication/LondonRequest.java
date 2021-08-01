@@ -27,8 +27,7 @@ public class LondonRequest {
      *
      * @return A list of the people from London or whose coordinates are currently near London.
      */
-    ArrayList<Person> getPeopleFromOrNearLondon()
-    {
+    ArrayList<Person> getPeopleFromOrNearLondon() {
         ArrayList<Person> people = new ArrayList<>();
 
         HttpClient httpClient = HttpClient.newHttpClient();
